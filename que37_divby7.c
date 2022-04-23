@@ -7,20 +7,19 @@ int main()
 	scanf("%d",&n);
 	printf("Enter 2nd No :  ");
 	scanf("%d",&m);
-	if(n >m)
+//	if(n >m)
+//	{
+//		t=m;
+//		m=n;
+//		n=t;
+//	}
+	
+    for(i=n+1;i<m;i++)
 	{
-		t=m;
-		m=n;
-		n=t;
-	}
-	i=n+1;
-    while(i<m)
-	{
-        if((i%7)==2 && (i%7)==3)
+        if((i%7)==2 || (i%7)==3)
 		{
-	    	printf("no %d \n",i);		
-		}
-	    i++;
+	    	printf("%d\n",i);		
+		}	    
    }
 	
 }
